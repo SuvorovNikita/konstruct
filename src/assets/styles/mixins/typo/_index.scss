@@ -57,6 +57,20 @@
   letter-spacing: 0.19px;
 }
 
+@mixin typo-cart-title {
+  font-family: $base-font;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin typo-cart-text {
+  font-family: $base-font;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.7px;
+}
+
+
 
 
 

@@ -1,0 +1,41 @@
+@import "../../variables/_index.scss";
+@import "../../mixins/_index.scss";
+
+&--base {
+
+  padding: 78px 0 115px;
+
+  #{$root} {
+
+    &__inner {
+      display: flex;
+    }
+
+    &__body {
+      background: $color-white;
+      border: 1px solid $color-border;
+      padding: 38px 0 39px 23px;
+      max-width: 295px;
+
+      &--mr-28 {
+        margin-right: 28px;
+      }
+    }
+
+    &__image {
+      margin-bottom: 19px;
+    }
+
+    &__title {
+      @include typo-cart-title;
+      color: $color-gray;
+      margin-bottom: 13px;
+    }
+
+    &__text {
+      @include typo-cart-text;
+      color: $color-gray;
+    }
+
+  }
+}

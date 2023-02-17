@@ -1,0 +1,8 @@
+.c-card {
+  position: relative;
+
+  $root: &;
+
+  @import "base";
+
+}
