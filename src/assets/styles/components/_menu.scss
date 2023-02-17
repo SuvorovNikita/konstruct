@@ -1,0 +1,60 @@
+@import "../../styles/variables/_index.scss";
+@import "../../styles/mixins/index";
+
+.c-menu {
+  $root: &;
+
+  padding: 21px 0 21px;
+  background: $color-white;
+  border: 1px solid $color-line;
+
+  &__inner {
+    justify-content: center;
+    display: flex;
+
+    @include media-up(md) {
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    display: none;
+
+    @include media-up(md) {
+      display: flex;
+      align-items: center;
+      margin-right: auto;
+    }
+
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 36px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    font-size: 11px;
+    color: $color-gray;
+
+    @include media-up(md) {
+      @include typo-menu;
+      color: $color-gray;
+      text-transform: uppercase;
+      transition: color ease-in 0.3s;
+    }
+
+    &:hover {
+      color: $color-blue;
+    }
+
+  }
+}

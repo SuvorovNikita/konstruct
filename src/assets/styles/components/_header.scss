@@ -1,0 +1,59 @@
+@import "../../styles/variables/_index.scss";
+@import "../../styles/mixins/index";
+
+.c-header {
+  $root: &;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  &__logo {
+    margin-bottom: 221px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 41px;
+
+    @include media-up(md) {
+      margin-bottom: 304px;
+    }
+
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__text {
+    width: 100%;
+    @include typo-h1;
+    color: $color-white;
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-size: 30px;
+
+    @include media-up(md) {
+      font-size: 60px;
+    }
+  }
+
+  &__subtitle {
+    @include typo-p;
+    color: $color-white;
+    margin-bottom: 221px;
+  }
+
+  &__actions {
+    margin-bottom: 71px;
+    text-align: center;
+  }
+
+  &__scroll {
+    @include typo-11;
+    color: $color-white;
+    text-transform: uppercase;
+  }
+
+
+}

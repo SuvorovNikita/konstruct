@@ -1,0 +1,96 @@
+@import "../../variables/_index.scss";
+@import "../../mixins/_index.scss";
+
+&--base {
+
+  #{$root} {
+
+    &__header {
+      text-align: center;
+    }
+
+    &__title {
+      @include typo-h2;
+      color: $color-gray;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    &__line {
+      width: 50px;
+      border: 2px solid $color-blue;
+      margin: 0 auto 58px auto;
+
+      &--left {
+        margin: 0;
+      }
+    }
+
+    &__inner {
+      @include media-up(lg) {
+        display: flex;
+      }
+    }
+
+    &__content {
+      margin-right: auto;
+    }
+
+    &__subtitle {
+      @include typo-20;
+      max-width: 377px;
+      margin-bottom: 35px;
+      color: $color-gray;
+
+      span {
+        color: $color-blue;
+      }
+    }
+
+    &__text {
+      @include typo-13;
+      max-width: 389px;
+      color: $color-gray;
+    }
+
+    &__photo {
+      display: flex;
+      padding-top: 27px;
+    }
+
+    &__img {
+      position: relative;
+    }
+
+    &__item {
+      padding-right: 10px;
+      margin-right: 10px;
+
+      &--mp {
+        padding-right: 0;
+        margin-right: 0;
+      }
+    }
+
+    &__name {
+      @include typo-24;
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      color: $color-white;
+      text-transform: uppercase;
+    }
+
+    &__context {
+      margin-right: 31px;
+    }
+
+    &__text-2 {
+      @include typo-11;
+      color: $color-gray;
+      max-width: 387px;
+    }
+
+
+  }
+}

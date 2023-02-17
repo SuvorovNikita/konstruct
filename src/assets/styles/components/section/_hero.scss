@@ -1,0 +1,12 @@
+@import "../../variables/_index.scss";
+
+
+&--hero {
+  #{$root} {
+
+    &__body {
+      padding: 58px 0 120px;
+      background-color: $color-bg;
+    }
+  }
+}

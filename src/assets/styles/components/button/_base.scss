@@ -1,0 +1,13 @@
+@import '../../mixins/index';
+@import '../../variables/index';
+
+&--base {
+  font-family: $base-font;
+  background: $color-blue;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  color: $color-white;
+  padding: 11px 29px;
+  text-transform: uppercase;
+}

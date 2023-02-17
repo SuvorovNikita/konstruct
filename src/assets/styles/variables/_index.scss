@@ -1,0 +1,47 @@
+// Fonts
+
+$base-font: 'Open Sans', sans-serif;
+$title-font: 'Bebas Neue', cursive;
+
+//Colors
+
+$color-gray: #48555B;
+$color-blue: #00A4E5;
+$color-white: #FFF;
+$color-black: #171819;
+$color-black-2: #141A20;
+$color-line: #E6E6E6;
+$color-bg: #F2F2F2;
+
+
+// Animations
+
+$animation-breakpoint: md !default;
+$animation-duration: 0.2s !default;
+$animation-function: ease !default;
+$transition-breakpoint: md !default;
+$transition-duration: 0.2s !default;
+$transition-function: ease !default;
+
+// Grid Config
+
+$grid-gutter: 15px;
+$grid-breakpoints: (
+        xs: 0,
+        sm: 568px,
+        md: 768px,
+        lg: 1024px,
+        xl: 1280px,
+);
+$container-max-widths: (
+        sm: 522px,
+        md: 708px,
+        lg: 944px,
+        xl: 971px,
+);
+$container-max-widths-sm: (
+        sm: 522px,
+        md: 708px,
+        lg: 944px,
+        xl: 970px,
+);

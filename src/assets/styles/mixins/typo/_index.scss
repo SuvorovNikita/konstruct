@@ -1,0 +1,68 @@
+@import '../../variables/index';
+
+@mixin typo-h1 {
+  font-family: $base-font;
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: 5.71px;
+}
+
+@mixin typo-h2 {
+  font-family: $base-font;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 2.3px;
+}
+
+@mixin typo-p {
+  font-family: $base-font;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+}
+
+@mixin typo-menu {
+  font-family: $base-font;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1.09px;
+  font-weight: 700;
+}
+
+@mixin typo-11 {
+  font-family: $base-font;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.2px;
+}
+
+@mixin typo-13 {
+  font-family: $base-font;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.19px;
+}
+
+@mixin typo-20 {
+  font-family: $base-font;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.19px;
+}
+
+@mixin typo-24 {
+  font-family: $base-font;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.19px;
+}
+
+
+
+
+
+
+
+
+
+
