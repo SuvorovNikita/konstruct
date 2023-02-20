@@ -1,0 +1,10 @@
+&--images {
+
+  #{$root} {
+    &__inner-img {
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}

@@ -43,6 +43,13 @@
   letter-spacing: 0.19px;
 }
 
+@mixin typo-14 {
+  font-family: $base-font;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.07px;
+}
+
 @mixin typo-20 {
   font-family: $base-font;
   font-size: 20px;
@@ -50,11 +57,24 @@
   letter-spacing: 0.19px;
 }
 
+@mixin typo-22 {
+  font-family: $base-font;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+}
+
 @mixin typo-24 {
   font-family: $base-font;
   font-size: 24px;
   line-height: 29px;
   letter-spacing: 0.19px;
+}
+
+@mixin typo-30 {
+  font-family: $base-font;
+  font-size: 30px;
+  letter-spacing: 0.15px;
 }
 
 @mixin typo-cart-title {

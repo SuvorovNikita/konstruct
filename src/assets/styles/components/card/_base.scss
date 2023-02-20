@@ -8,17 +8,30 @@
   #{$root} {
 
     &__inner {
-      display: flex;
+    margin: 0 auto;
+
+      @include media-up(md) {
+        display: flex;
+      }
+
     }
 
     &__body {
+      width: 100%;
       background: $color-white;
       border: 1px solid $color-border;
       padding: 38px 0 39px 23px;
-      max-width: 295px;
+
+      @include media-up(md) {
+        max-width: 295px;
+      }
 
       &--mr-28 {
-        margin-right: 28px;
+        margin-right: 0;
+
+        @include media-up(md) {
+          margin-right: 28px;
+        }
       }
     }
 

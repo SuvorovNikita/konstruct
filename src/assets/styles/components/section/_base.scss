@@ -16,17 +16,31 @@
       margin-bottom: 10px;
     }
 
+    &__title-2 {
+      @include typo-30;
+      color: $color-gray;
+      max-width: 350px;
+      text-align: center;
+      margin: 0 auto;
+    }
+
     &__line {
       width: 50px;
       border: 2px solid $color-blue;
       margin: 0 auto 58px auto;
 
       &--left {
-        margin: 0;
+
+        margin: 10px auto;
+        @include media-up(md) {
+          margin: 0;
+        }
       }
     }
 
     &__inner {
+      text-align: center;
+      margin: 0 auto;
       @include media-up(lg) {
         display: flex;
       }
@@ -82,13 +96,35 @@
     }
 
     &__context {
-      margin-right: 44px;
+      margin-right: 0;
+
+      @include media-up(md) {
+        margin-right: 44px;
+      }
     }
 
     &__text-2 {
+      margin-bottom: 10px;
       @include typo-11;
       color: $color-gray;
-      max-width: 387px;
+
+      @include media-up(md) {
+        @include typo-11;
+        color: $color-gray;
+        max-width: 387px;
+      }
+    }
+
+    &__body-2 {
+      display: flex;
+      justify-content: center;
+      padding: 120px 0 0 0;
+    }
+
+    &__action {
+      text-align: center;
+      margin-top: 35px;
+      padding-bottom: 237px;
     }
 
 
