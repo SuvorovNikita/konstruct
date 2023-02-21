@@ -1,4 +1,116 @@
+@import "../../styles/variables/_index.scss";
+@import "../../styles/mixins/index";
+
+
 .c-footer {
   $root: &;
+
+  background-color: $color-black-2;
+
+  &__body {
+    padding: 42px 0 49px 0;
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__company {
+    margin-right: auto;
+    max-width: 239px;
+  }
+
+  &__title {
+    @include typo-11;
+    color: $color-white;
+    margin-bottom: 19px;
+    text-transform: uppercase;
+  }
+
+  &__logo {
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    @include typo-11;
+    line-height: 19px;
+    color: $color-white;
+    letter-spacing: 0.85px;
+  }
+
+  &__about {
+    margin-right: 34px;
+  }
+
+  &__item {
+    margin-bottom: 5px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    @include typo-11;
+    text-transform: uppercase;
+    color: $color-white;
+    margin-bottom: 10px;
+    transition: all ease-in 0.3s;
+
+    &:hover {
+      color: $color-blue;
+    }
+  }
+
+  &__faq {
+    margin-right: 38px;
+    padding-top: 26px;
+  }
+
+  &__blog {
+    margin-right: 58px;
+    padding-top: 26px;
+  }
+
+  &__contact {
+    margin-right: 103px;
+  }
+
+  &__address {
+    max-width: 110px;
+
+  }
+
+  &__text {
+    @include typo-11;
+    color: $color-white;
+    letter-spacing: 0.85px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+
+  &__phone {
+    @include typo-11;
+    color: $color-white;
+    margin-bottom: 10px;
+  }
+
+  &__email {
+    @include typo-11;
+    color: $color-white;
+  }
+
+  &__social-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social-item {
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 
 }

@@ -4,6 +4,8 @@ import Story from "./components/Story.jsx";
 import Our from "./components/Our.jsx";
 import Contact from "./components/Contact.jsx";
 import Form from "./components/Form.jsx";
+import Footer from "./components/Footer.jsx";
+import Made from "./components/Made.jsx";
 
 function App() {
 
@@ -15,6 +17,8 @@ function App() {
             <Our/>
             <Contact/>
             <Form/>
+            <Footer/>
+            <Made/>
         </main>
     )
 }
