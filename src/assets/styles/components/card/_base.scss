@@ -20,7 +20,7 @@
       width: 100%;
       background: $color-white;
       border: 1px solid $color-border;
-      padding: 38px 0 39px 23px;
+      padding: 38px 22px 39px 23px;
 
       @include media-up(md) {
         max-width: 295px;
@@ -31,6 +31,10 @@
 
         @include media-up(md) {
           margin-right: 28px;
+        }
+
+        &:last-child {
+          margin-right: 0;
         }
       }
     }
@@ -43,6 +47,7 @@
       @include typo-cart-title;
       color: $color-gray;
       margin-bottom: 13px;
+      text-transform: uppercase;
     }
 
     &__text {
