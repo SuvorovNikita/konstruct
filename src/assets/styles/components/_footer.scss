@@ -12,7 +12,10 @@
   }
 
   &__inner {
-    display: flex;
+
+    @include media-up(md) {
+      display: flex;
+    }
   }
 
   &__company {
@@ -32,10 +35,19 @@
   }
 
   &__subtitle {
+    margin-bottom: 30px;
     @include typo-11;
     line-height: 19px;
     color: $color-white;
     letter-spacing: 0.85px;
+
+    @include media-up(md) {
+      @include typo-11;
+      line-height: 19px;
+      color: $color-white;
+      letter-spacing: 0.85px;
+    }
+
   }
 
   &__about {
@@ -101,8 +113,13 @@
   }
 
   &__social-menu {
+    margin-top: 25px;
     display: flex;
-    align-items: center;
+
+    @include media-up(md) {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__social-item {
