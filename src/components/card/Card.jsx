@@ -32,7 +32,7 @@ const Card = () => {
     return (
         <>
             <div className="c-card__inner">
-                {card.map(el => <div className="c-card__body c-card__body--mr-28">
+                {card.map(el => <div key={el.id} className="c-card__body c-card__body--mr-28">
                     <div className="c-card__image">
                         <img className="c-card__icon" src={el.url} alt={el.alt}/>
                     </div>
