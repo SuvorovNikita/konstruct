@@ -1,7 +1,7 @@
 import icon1 from "../assets/img/icon-1.svg"
 import icon2 from "../assets/img/icon-2.svg"
 import icon3 from "../assets/img/icon-3.svg"
-import Card from "./Card/Card.jsx";
+import Card from "./card/Card.jsx";
 
 const Our = () => {
     return (
