@@ -1,3 +1,5 @@
+import { Link, animateScroll as scroll } from "react-scroll";
+
 const Nav = () => {
 
     const menu = [
@@ -11,7 +13,11 @@ const Nav = () => {
         <>
             <nav className="c-menu__navigation">
                 {menu.map(el => <div key={el.id} className="c-menu__item">
-                    <a href={el.link} id={el.id} className="c-menu__link">{el.name}</a>
+                    <Link
+                        to={el.link}
+                        id={el.id} className="c-menu__link">
+                        {el.name}
+                    </Link>
                 </div>)}
             </nav>
         </>

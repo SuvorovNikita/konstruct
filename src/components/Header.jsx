@@ -1,5 +1,6 @@
 import bg from "../assets/img/header-bg.png"
 import logo from "../assets/img/logo.svg"
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Header = () => {
     return <>
@@ -7,9 +8,9 @@ const Header = () => {
             <div className="container">
                 <div className="c-header__logo">
                     <div className="c-header__link">
-                        <a href="#">
+                        <Link href="#">
                             <img src={logo} alt="logo"/>
-                        </a>
+                        </Link>
                     </div>
 
                 </div>
@@ -18,7 +19,7 @@ const Header = () => {
                     <p className="c-header__subtitle">An award-winning construction management firm</p>
                 </div>
                 <div className="c-header__actions">
-                    <a className="c-header__scroll" href="#">SCROLL DOWN</a>
+                    <Link className="c-header__scroll" to="menu"  smooth={true}>SCROLL DOWN</Link>
                 </div>
             </div>
         </header>

@@ -31,14 +31,16 @@ const Card = () => {
 
     return (
         <>
-            <div className="c-card__inner">
-                {card.map(el => <div key={el.id} className="c-card__body c-card__body--mr-28">
-                    <div className="c-card__image">
-                        <img className="c-card__icon" src={el.url} alt={el.alt}/>
-                    </div>
-                    <h3 className="c-card__title">{el.title}</h3>
-                    <p className="c-card__text">{el.text}</p>
-                </div>)}
+            <div className="c-card c-card--base">
+                <div className="c-card__inner">
+                    {card.map(el => <div key={el.id} className="c-card__body c-card__body--mr-28">
+                        <div className="c-card__image">
+                            <img className="c-card__icon" src={el.url} alt={el.alt}/>
+                        </div>
+                        <h3 className="c-card__title">{el.title}</h3>
+                        <p className="c-card__text">{el.text}</p>
+                    </div>)}
+                </div>
             </div>
         </>
     )

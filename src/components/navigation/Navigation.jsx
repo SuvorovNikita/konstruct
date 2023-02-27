@@ -4,7 +4,7 @@ import Nav from "./Nav.jsx";
 const Navigation = () => {
     return (
         <>
-            <section className="c-menu">
+            <section id="menu" className="c-menu">
                 <div className="container">
                     <div className="c-menu__inner">
                         <div className="c-menu__logo">

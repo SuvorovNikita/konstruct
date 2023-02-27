@@ -1,6 +1,3 @@
-import icon1 from "../assets/img/icon-1.svg"
-import icon2 from "../assets/img/icon-2.svg"
-import icon3 from "../assets/img/icon-3.svg"
 import Card from "./card/Card.jsx";
 
 const Our = () => {
@@ -21,13 +18,12 @@ const Our = () => {
                                 tincidunt ut laoreet dolore magna aliquam erat.</p>
                         </div>
                         <div className="c-section__actions">
-                            <a className="c-button c-button--base" href="">All services</a>
+                            <a className="c-button c-button--base" href="#">All services</a>
                         </div>
                     </div>
-                    <div className="c-card c-card--base">
                         <Card/>
                     </div>
-                </div>
+
             </section>
         </>
     )

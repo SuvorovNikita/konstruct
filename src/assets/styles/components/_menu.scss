@@ -4,7 +4,7 @@
 .c-menu {
   $root: &;
 
-  padding: 21px 0 21px;
+  padding: 24px 0;
   background: $color-white;
   border: 1px solid $color-border;
 
@@ -50,6 +50,7 @@
       color: $color-gray;
       text-transform: uppercase;
       transition: color ease-in 0.3s;
+      cursor: pointer;
     }
 
     &:hover {

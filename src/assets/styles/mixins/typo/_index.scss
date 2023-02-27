@@ -1,10 +1,9 @@
 @import '../../variables/index';
 
 @mixin typo-h1 {
-  font-family: $base-font;
+  font-family: $title-font;
   font-size: 60px;
   line-height: 70px;
-  letter-spacing: 5.71px;
 }
 
 @mixin typo-h2 {

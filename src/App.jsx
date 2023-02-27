@@ -9,18 +9,18 @@ import Made from "./components/Made.jsx";
 
 function App() {
 
-    return (
+    return (<>
+        <Header/>
         <main className="main">
-            <Header/>
             <Navigation/>
             <Story/>
             <Our/>
             <Contact/>
             <Form/>
-            <Footer/>
-            <Made/>
         </main>
-    )
+        <Footer/>
+        <Made/>
+    </>)
 }
 
 export default App

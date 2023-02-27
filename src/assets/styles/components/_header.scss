@@ -5,7 +5,8 @@
   $root: &;
   overflow: hidden;
   background-repeat: no-repeat;
-  background-size: cover;
+  //background-size: cover;
+  background-position: center;
 
 
   &__logo {
@@ -26,7 +27,6 @@
   }
 
   &__text {
-    width: 100%;
     @include typo-h1;
     color: $color-white;
     text-transform: uppercase;
@@ -41,19 +41,26 @@
   &__subtitle {
     @include typo-p;
     color: $color-white;
-    margin-bottom: 221px;
+    margin-bottom: 220px;
+    letter-spacing: 0.9px;
+
   }
 
   &__actions {
-    margin-bottom: 71px;
+    margin-bottom: 68px;
     text-align: center;
   }
 
   &__scroll {
     @include typo-11;
+    letter-spacing: 3.2px;
     color: $color-white;
     text-transform: uppercase;
+    cursor: pointer;
   }
 
+  &__link {
+    cursor: pointer;
+  }
 
 }
