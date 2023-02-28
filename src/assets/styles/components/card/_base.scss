@@ -3,7 +3,7 @@
 
 &--base {
 
-  padding: 78px 0 115px;
+  padding: 56px 0 115px;
 
   #{$root} {
 
@@ -21,6 +21,7 @@
       background: $color-white;
       border: 1px solid $color-border;
       padding: 38px 22px 39px 23px;
+      min-height: 330px;
 
       @include media-up(md) {
         max-width: 295px;
@@ -40,7 +41,7 @@
     }
 
     &__image {
-      margin-bottom: 19px;
+      margin-bottom: 22px;
     }
 
     &__title {

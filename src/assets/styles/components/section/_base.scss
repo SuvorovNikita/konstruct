@@ -6,14 +6,18 @@
   #{$root} {
 
     &__header {
-      text-align: center;
+      text-align: left;
+
+      @include media-up(lg) {
+        text-align: center;
+      }
     }
 
     &__title {
       @include typo-h2;
       color: $color-gray;
       text-transform: uppercase;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     &__title-2 {
@@ -27,13 +31,18 @@
     &__line {
       width: 50px;
       border: 2px solid $color-blue;
-      margin: 0 auto 58px auto;
+
+      margin: 0 auto 58px 0;
+
+      @include media-up(lg) {
+        margin: 0 auto 58px auto;
+      }
 
       &--left {
+        margin: 0 auto 10px 0;
 
-        margin: 10px auto;
-        @include media-up(md) {
-          margin: 0;
+        @include media-up(lg) {
+          margin-left: 0;
         }
       }
     }
@@ -47,7 +56,9 @@
     }
 
     &__content {
+      max-width: 405px;
       margin-right: auto;
+      text-align: left;
     }
 
     &__subtitle {
@@ -70,6 +81,7 @@
     &__photo {
       display: flex;
       padding-top: 27px;
+      height: 225px;
     }
 
     &__img {
@@ -79,6 +91,7 @@
     &__item {
       padding-right: 10px;
       margin-right: 10px;
+      height: 222px;
 
       &--mp {
         padding-right: 0;
@@ -87,19 +100,34 @@
     }
 
     &__name {
-      @include typo-24;
       position: absolute;
       left: 15px;
       top: 15px;
       color: $color-white;
       text-transform: uppercase;
+      text-align: left;
+      max-width: 76px;
+      @include typo-13;
+      line-height:16px;
+
+      @include media-up(md) {
+        @include typo-24;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        color: $color-white;
+        text-transform: uppercase;
+        text-align: left;
+        max-width: 76px;
+      }
+
     }
 
     &__context {
       margin-right: 0;
 
       @include media-up(md) {
-        margin-right: 44px;
+        margin-right: 31px;
       }
     }
 
@@ -107,11 +135,16 @@
       margin-bottom: 10px;
       @include typo-11;
       color: $color-gray;
+      text-align: left;
 
-      @include media-up(md) {
+      @include media-up(lg) {
         @include typo-11;
         color: $color-gray;
-        max-width: 387px;
+        max-width: 405px;
+        line-height: 19px;
+        text-align: left;
+        letter-spacing: .5px;
+        margin-bottom: 20px;
       }
     }
 
@@ -125,6 +158,14 @@
       text-align: center;
       margin-top: 35px;
       padding-bottom: 237px;
+    }
+
+    &__actions {
+      text-align: left;
+
+      @include media-up(lg) {
+        text-align: center;
+      }
     }
 
     &__made {

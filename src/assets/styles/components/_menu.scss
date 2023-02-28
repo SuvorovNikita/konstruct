@@ -3,10 +3,13 @@
 
 .c-menu {
   $root: &;
-
-  padding: 24px 0;
+  padding: 23px 0;
+  height: 65px;
   background: $color-white;
   border: 1px solid $color-border;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 
   &__inner {
     justify-content: center;
@@ -43,18 +46,25 @@
 
   &__link {
     font-size: 11px;
+    color: $color-blue;
+
+    @include media-up(md) {
+      @include typo-menu;
+      color: $color-blue;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+
+  &__not-active {
+    font-size: 11px;
     color: $color-gray;
 
     @include media-up(md) {
       @include typo-menu;
       color: $color-gray;
       text-transform: uppercase;
-      transition: color ease-in 0.3s;
       cursor: pointer;
-    }
-
-    &:hover {
-      color: $color-blue;
     }
 
   }
