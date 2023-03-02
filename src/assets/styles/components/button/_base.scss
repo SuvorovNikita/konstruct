@@ -10,13 +10,29 @@
   color: $color-white;
   padding: 12px 26px;
   text-transform: uppercase;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: $color-gray;
+  }
+
+  &:hover:before {
+    width: 100%;
+  }
+
+  &:before {
+    transition: width 0.35s;
+  }
 
   &--p {
     width: 150px;
     height: 40px;
-  }
 
-  &:hover {
-    opacity: 0.7;
   }
 }

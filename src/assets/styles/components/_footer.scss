@@ -118,6 +118,11 @@
     margin-bottom: 20px;
     font-style: normal;
     letter-spacing: 1.2px;
+    transition: all ease-in 0.3s;
+
+    &:hover {
+      color: $color-blue;
+    }
   }
 
   &__email {
@@ -125,6 +130,11 @@
     color: $color-white;
     font-style: normal;
     letter-spacing: 1.2px;
+    transition: all ease-in 0.3s;
+
+    &:hover {
+      color: $color-blue;
+    }
   }
 
   &__social-menu {
