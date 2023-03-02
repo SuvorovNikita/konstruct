@@ -32,6 +32,7 @@
     margin: 0 auto;
     font-size: 30px;
     letter-spacing: 5.9px;
+    line-height: 1;
 
     @include media-up(md) {
       font-size: 60px;
