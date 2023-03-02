@@ -8,7 +8,7 @@
   #{$root} {
 
     &__inner {
-    margin: 0 auto;
+      margin: 0 auto;
 
       @include media-up(md) {
         display: flex;
@@ -22,6 +22,11 @@
       border: 1px solid $color-border;
       padding: 38px 22px 39px 23px;
       min-height: 330px;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        box-shadow: $color-shadow;
+      }
 
       @include media-up(md) {
         max-width: 295px;

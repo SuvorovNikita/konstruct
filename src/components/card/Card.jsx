@@ -28,7 +28,6 @@ const Card = () => {
         },
     ];
 
-
     return (
         <>
             <div className="c-card c-card--base">

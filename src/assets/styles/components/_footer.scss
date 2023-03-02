@@ -8,12 +8,12 @@
   background-color: $color-black-2;
 
   &__body {
-    padding: 42px 0 49px 0;
+    padding: 45px 0 35px 0;
   }
 
   &__inner {
 
-    @include media-up(md) {
+    @include media-up(lg) {
       display: flex;
     }
   }
@@ -24,28 +24,31 @@
   }
 
   &__title {
+
     @include typo-11;
     color: $color-white;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
     text-transform: uppercase;
   }
 
   &__logo {
+    margin-top: 20px;
     margin-bottom: 10px;
   }
 
   &__subtitle {
-    margin-bottom: 30px;
     @include typo-11;
     line-height: 19px;
     color: $color-white;
     letter-spacing: 0.85px;
+    margin-bottom: 20px;
 
-    @include media-up(md) {
+    @include media-up(lg) {
       @include typo-11;
-      line-height: 21px;
+      line-height: 19px;
       color: $color-white;
       letter-spacing: 0.85px;
+
     }
   }
 
@@ -54,7 +57,7 @@
   }
 
   &__item {
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 
     &:last-child {
       margin-bottom: 0;
@@ -79,12 +82,19 @@
   }
 
   &__blog {
-    margin-right: 58px;
+    margin-right: 60px;
     padding-top: 26px;
   }
 
   &__contact {
-    margin-right: 103px;
+    margin-top: 20px;
+
+    @include media-up(lg) {
+      margin-top: 0;
+      margin-right: 75px;
+      max-width: 141px;
+    }
+
   }
 
   &__address {
@@ -97,18 +107,24 @@
     color: $color-white;
     letter-spacing: 0.85px;
     line-height: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-style: normal;
   }
 
   &__phone {
     @include typo-11;
     color: $color-white;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-style: normal;
+    letter-spacing: 1.2px;
   }
 
   &__email {
     @include typo-11;
     color: $color-white;
+    font-style: normal;
+    letter-spacing: 1.2px;
   }
 
   &__social-menu {
@@ -119,6 +135,10 @@
       display: flex;
       align-items: center;
     }
+  }
+
+  &__social {
+    margin-right: 25px;
   }
 
   &__social-item {

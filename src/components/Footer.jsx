@@ -3,6 +3,7 @@ import icon1 from '../assets/img/facebook.svg'
 import icon2 from '../assets/img/twitter.svg'
 import icon3 from '../assets/img/google.svg'
 
+
 const Footer = () => {
     return (
         <>
@@ -15,9 +16,9 @@ const Footer = () => {
                                 <div className="c-footer__logo">
                                     <img src={logo} alt="logo-footer"/>
                                 </div>
-                                <div className="c-footer__subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                <p className="c-footer__subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing
                                     elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
-                                </div>
+                                </p>
                             </div>
                             <div className="c-footer__about">
                                 <div className="c-footer__title">Links</div>
@@ -70,7 +71,7 @@ const Footer = () => {
                                 <address className="c-footer__address">
                                     <p className="c-footer__text">213 Baker Street Oriel City Kounty 7000 KNW,
                                         Kountry Name</p>
-                                    <a className="c-footer__phone" href="tel:+239942334022">+23 994 233 4022</a> <br/>
+                                    <a className="c-footer__phone" href="tel:+239942334022">+23 994 233 4022</a><br/><br/>
                                     <a className="c-footer__email"
                                        href="mailto:info@konstruct.com">info@konstruct.com</a>
                                 </address>

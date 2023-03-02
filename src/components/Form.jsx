@@ -11,7 +11,9 @@ const Form = () => {
                                     <input className="c-form__input" type="text" placeholder="test@youremail.com"/>
                                 </div>
                             </form>
-                            <input  className="c-button c-button--base c-button--base--p" type="button" value="SIGNUP"/>
+                            <div className="c-form__actions">
+                                <input  className="c-button c-button--base c-button--base--p" type="button" value="SIGNUP"/>
+                            </div>
                         </div>
                     </div>
                 </div>

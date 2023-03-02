@@ -1,8 +1,8 @@
 import {NavLink} from "react-router-dom";
-
 const Nav = () => {
 
     const menu = [
+
         {id: "1", link: "/home", name: "Home"},
         {id: "2", link: "/", name: "About"},
         {id: "3", link: "/services", name: "Services"},

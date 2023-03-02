@@ -3,11 +3,10 @@ import bg from "../assets/img/contact-bg.png";
 const Contact = () => {
     return (
         <>
-            <section className="c-section c-section--base c-section--images" style={{
+            <section className="c-section c-section--base c-section--images c-section--bg" style={{
                 backgroundImage: `url(${bg})`,
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
-                backgroundSize: "cover"
             }}>
                 <div className="container">
                     <div className="c-section__body-2">
